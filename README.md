@@ -1,58 +1,116 @@
+# ✨ Radio Starlight — Your Generative Radio Station
 
+**Design. Generate. Broadcast.**
+A next‑generation studio for building living, AI‑powered radio programs from the web’s freshest content.
 
-![architecture](images/starlight.jpg)
+---
 
-# ✨ Radio Starlight - Your Generative Radio Station
+## Why Radio Starlight
 
-A Revolution in AI-Powered Radio Experiences for macOS and iOS
+Radio Starlight turns the internet into a programmable broadcast. Mix live feeds, APIs, and web pages with your own show structure, then generate segment scripts, cover art, and a consistent on‑air personality—on demand. Whether you want a quick auto‑generated show or a handcrafted lineup, Radio Starlight gives you both.
 
-Radio Starlight and its companion player app, Starlight GO, merge AI's prowess with dynamic user personalization to redefine auditory media. At their core, these apps allow users to transform passive moments into enriching, tailored listening experiences. By blending Apple Music, News Feed, local weather, and now with the capability to pull content from JSON API and web pages, users get a harmonious mix of entertainment and real-time information on both desktop and mobile platforms.
+---
 
-https://radio-starlight.com  
-https://apps.apple.com/us/app/starlight-go/id6468881126
+## What makes it different
 
-## What it does
+**1) Segment‑first creative control**
+Manually design your program structure. Decide which segment uses which content source and guide generation with your own prompts. Build repeatable templates like:
 
-- Seamlessly blends Apple Music, news feeds, local weather, JSON API content, and web page data into an auditory experience. Your favorite tracks and incoming information aren't just played - they're discussed by a user-defined personality, merging entertainment and insights.
-- Generates English radio programs from any language news source.
-- Enhances listening with visuals, script texts, and news images.
-- Empowered by OpenAI for dynamic and engaging content.
-- Import, export, and share Programs, Personalities, and Sound Sets as JSON files, allowing users to exchange and collaborate on their listening experiences.
+* **Opening** → Weather, and headline roundup
+* **Music*** → Playback from playlist
+* **Deep Dive** → Discussion (e.g., Hotly debated research paper)
+* **News Corner** → Selected RSS/Atom/JSON feeds
+* **Outro** → Personality‑driven sign‑off
 
-## Unique Traits
+**2) Bring your own content**
+Blend the web however you like:
 
-- Design a personalized voice that offers commentary and insights.
-- On-the-fly program crafting.
-- Amplify your experience with custom background Sound.
-- DALL-E powered visuals for covers and avatars.
+* **Feeds:** RSS, Atom, JSON
+* **API content:** Any accessible API (e.g., calendar/events, knowledge bases)
+* **Page content:** Any public webpage
 
-## Goals
+**3) Bring your own AI**
+Use the models that fit your workflow and constraints:
 
-- Build the most productive and most enjoyable information acquisition channel for humans.
+* **Cloud APIs:** OpenAI, Google Gemini, and more
+* **On‑device (Apple):** Apple’s **Foundation Models** and **Image Playground** for private, low‑latency generation on compatible Apple devices
 
-## Roadmap
+**4) Personality & sound that feel like “radio”**
+Define a **custom on‑air personality** (tone, style, quirks) and pair it with **Sound Sets** for BGM and stingers. Generate **cover images and avatars** to brand each show or series.
 
-- Continuous program generation, 24/7.
-- Creating custom program segments.
-- Defining custom segment prompts.
-- More LLM models.
-- More languages.
+**5) Basic Program + Custom Program**
 
-## Contributions
+* **Basic:** Auto-generate a complete program from your chosen sources.
+* **Custom:** Full control over segments, prompts, sources, and visuals for consistent, repeatable shows.
 
-- We welcome contributions from the community. 
-- Feel free to open an issue. 
+**6) Open publishing**
+Publish everything—**designed programs**, **generated broadcasts**, **the feeds/APIs/pages you used**, **personalities**, and **Sound Sets**—using the open protocol from the Starlight Catalog Service (open‑source):
+[https://github.com/RayKitajima/StarlightCatalogService](https://github.com/RayKitajima/StarlightCatalogService)
+This makes your shows **shareable, remixable, and reproducible** across the ecosystem.
 
-![screen shot](images/screens.png)
+---
 
+## How it works (end‑to‑end)
 
---- 
+1. **Collect**
+   Add feeds (RSS/Atom/JSON), connect APIs, and point to pages you care about.
 
-📁 Acknowledgements for Images in the diagram:  
-<a target="_blank" href="https://icons8.com/icon/81TSi6Gqk0tm/music">Music</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> / 
-<a target="_blank" href="https://icons8.com/icon/13841/rss">Feed</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> / 
-<a target="_blank" href="https://icons8.com/icon/63807/website">Web</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> / 
-<a target="_blank" href="https://icons8.com/icon/21895/rest-api">Rest API</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> / 
-<a target="_blank" href="https://icons8.com/icon/12793/radio">Radio</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> / 
-<a target="_blank" href="https://icons8.com/icon/12376/advance">Advance</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> 
+2. **Design**
+   Create your program structure: name segments, assign content sources, and attach a prompt to each segment.
+
+3. **Choose engines**
+   Pick a text LLM for script generation and an image model for show art. Use cloud APIs or Apple on‑device models if you can use. 
+
+4. **Generate**
+   Produce segment scripts, covers, and avatars. Keep your **personality** and **Sound Sets** consistent across episodes.
+
+5. **Publish**
+   Export your designed program, generated broadcast, and source references using the Starlight Catalog Service protocol for transparent attribution and easy sharing.
+
+---
+
+## Who it’s for
+
+* **Indie creators & streamers:** Spin up daily or weekly shows without a production team.
+* **Community radio & campus media:** Standardize formats and share templates with volunteers.
+* **Brands & publishers:** Turn owned content and APIs into evergreen or topical radio formats.
+* **Educators & museums:** Build narrative tours from trusted sources.
+* **Open‑source tinkerers:** Publish and remix using a transparent, portable catalog.
+
+---
+
+## Example formats you can build fast
+
+* **Morning Briefing:** Headlines + “On this day” + local culture spotlight
+* **Tech Weekly:** Product updates from feeds + deep‑dive API segment + Q\&A roundup
+* **City Beat:** Neighborhood events (calendar API) + community notices (pages) + music interludes
+* **Evergreen Series:** Long‑form explainers with a consistent persona and branded cover art
+
+---
+
+## Key advantages
+
+* **Creative control:** Prompts and structure at the segment level = consistent, signature shows.
+* **Choice of models:** Use the best engine for each job—cloud when you need scale, on‑device when privacy or offline is critical.
+* **Transparency & attribution:** Publish sources with your broadcast so audiences and collaborators can verify and remix.
+* **Reusable assets:** Personalities and Sound Sets plug into any show, so you can scale formats quickly.
+* **Future‑proof:** Open protocol (Starlight Catalog Service) keeps your work portable.
+
+---
+
+## Responsible generation (good practice, built in)
+
+* Encourage clear **source attribution** for every segment.
+* **On‑device options** to keep sensitive workflows local on compatible Apple hardware.
+* Designed for **remix culture** with responsible sharing through open metadata.
+
+---
+
+## Fast start
+
+1. Pick a **Basic** or **Custom** build.
+2. Add feeds, APIs, and pages.
+3. Select your text model + image model.
+4. Define or pick a personality and Sound Set.
+5. Generate (publish to you wish).
 
