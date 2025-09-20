@@ -7,6 +7,7 @@ A next‑generation studio for building living, AI‑powered radio programs from
 ## Why Radio Starlight
 
 Radio Starlight turns the internet into a programmable broadcast. Mix live feeds, APIs, and web pages with your own show structure, then generate segment scripts, cover art, and a consistent on‑air personality—on demand. Whether you want a quick auto‑generated show or a handcrafted lineup, Radio Starlight gives you both.
+
 ---
 
 ## What makes it different
