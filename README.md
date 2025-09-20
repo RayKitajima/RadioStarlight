@@ -2,13 +2,11 @@
 
 **Design. Generate. Broadcast.**
 A next‑generation studio for building living, AI‑powered radio programs from the web’s freshest content.
-
 ---
 
 ## Why Radio Starlight
 
 Radio Starlight turns the internet into a programmable broadcast. Mix live feeds, APIs, and web pages with your own show structure, then generate segment scripts, cover art, and a consistent on‑air personality—on demand. Whether you want a quick auto‑generated show or a handcrafted lineup, Radio Starlight gives you both.
-
 ---
 
 ## What makes it different
@@ -43,10 +41,8 @@ Define a **custom on‑air personality** (tone, style, quirks) and pair it with 
 * **Basic:** Auto‑generate a complete program from your chosen sources.
 * **Custom (Pro):** Create and edit your own program templates with full control over segments, prompts for consistent, repeatable shows. *(Requires subscription)*
 
-**6) Open publishing**
-Publish everything—**designed programs**, **generated broadcasts**, **the feeds/APIs/pages you used**, **personalities**, and **Sound Sets**—using the open protocol from the Starlight Catalog Service (open‑source):
-[https://github.com/RayKitajima/StarlightCatalogService](https://github.com/RayKitajima/StarlightCatalogService)
-This makes your shows **shareable, remixable, and reproducible** across the ecosystem.
+**6) Publishing & sharing (optional)**
+When you want to share, you can export programs and assets using the open **Starlight Catalog Service** format (self‑hosted static files). It’s **not required** for everyday use.
 
 ---
 
@@ -63,9 +59,20 @@ This makes your shows **shareable, remixable, and reproducible** across the ecos
 
 4. **Generate**
    Produce segment scripts, covers, and avatars. Keep your **personality** and **Sound Sets** consistent across episodes.
+5. **Publish (optional)** 
+   Export programs and assets in an open, portable format if you want to share.
 
-5. **Publish**
-   Export your designed program, generated broadcast, and source references using the Starlight Catalog Service protocol for transparent attribution and easy sharing.
+---
+
+## Publishing & sharing (optional)
+
+* **Purpose:** Make your shows and building blocks portable, citable, and easy to import—only when you want to.
+* **What you can share:** Programs, generated Broadcast, Persons (personalities), Sound Sets, and content presets (Feeds/API/Page).
+* **How it works:** Export from Radio Starlight → run a small tool to generate a static folder of JSON + media → host anywhere (e.g., GitHub Pages, Netlify).
+* **How others use it:** Paste your catalog URL in Radio Starlight to browse/import; “Featured” folders surface items in a simple carousel.
+* **Good practice:** Publish with source attribution so broadcasts are transparent and remixable.
+
+> The **Starlight Catalog Service** is open‑source and separate from the app. Use it only if publishing matters to you.
 
 ---
 
@@ -92,9 +99,9 @@ This makes your shows **shareable, remixable, and reproducible** across the ecos
 
 * **Creative control:** Prompts and structure at the segment level = consistent, signature shows.
 * **Choice of models:** Use the best engine for each job—cloud when you need scale, on‑device when privacy or offline is critical.
-* **Transparency & attribution:** Publish sources with your broadcast so audiences and collaborators can verify and remix.
+* **Transparency** — Clear source attribution baked in.
 * **Reusable assets:** Personalities and Sound Sets plug into any show, so you can scale formats quickly.
-* **Future‑proof:** Open protocol (Starlight Catalog Service) keeps your work portable.
+* **Portable (when needed)** — Optional open publishing keeps your work future‑proof.
 
 ---
 
@@ -102,15 +109,16 @@ This makes your shows **shareable, remixable, and reproducible** across the ecos
 
 * Encourage clear **source attribution** for every segment.
 * **On‑device options** to keep sensitive workflows local on compatible Apple hardware.
-* Designed for **remix culture** with responsible sharing through open metadata.
+* Design for **remix culture** with open, lightweight metadata.
 
 ---
 
 ## Fast start
 
-1. Pick a **Basic** or **Custom** build.
+1. Pick **Basic** or **Custom (Pro)**.
 2. Add feeds, APIs, and pages.
-3. Select your text model + image model.
+3. Select your text + image models.
 4. Define or pick a personality and Sound Set.
-5. Generate (publish if you wish).
+5. Generate.
+6. *(Optional)* Publish and share.
 
