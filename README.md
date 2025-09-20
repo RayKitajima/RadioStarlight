@@ -16,9 +16,9 @@ Radio Starlight turns the internet into a programmable broadcast. Mix live feeds
 **1) Segment‑first creative control**
 Manually design your program structure. Decide which segment uses which content source and guide generation with your own prompts. Build repeatable templates like:
 
-* **Opening** → Weather, and headline roundup
-* **Music*** → Playback from playlist
-* **Deep Dive** → Discussion (e.g., Hotly debated research paper)
+* **Opening** → Weather and headline roundup
+* **Music** → Playback from playlist
+* **Deep Dive** → Discussion (e.g., hotly debated research paper)
 * **News Corner** → Selected RSS/Atom/JSON feeds
 * **Outro** → Personality‑driven sign‑off
 
@@ -38,10 +38,10 @@ Use the models that fit your workflow and constraints:
 **4) Personality & sound that feel like “radio”**
 Define a **custom on‑air personality** (tone, style, quirks) and pair it with **Sound Sets** for BGM and stingers. Generate **cover images and avatars** to brand each show or series.
 
-**5) Basic Program + Custom Program**
+**5) Basic Program + Custom Program (Pro)**
 
-* **Basic:** Auto-generate a complete program from your chosen sources.
-* **Custom:** Full control over segments, prompts, sources, and visuals for consistent, repeatable shows.
+* **Basic:** Auto‑generate a complete program from your chosen sources.
+* **Custom (Pro):** Create and edit your own program templates with full control over segments, prompts for consistent, repeatable shows. *(Requires subscription)*
 
 **6) Open publishing**
 Publish everything—**designed programs**, **generated broadcasts**, **the feeds/APIs/pages you used**, **personalities**, and **Sound Sets**—using the open protocol from the Starlight Catalog Service (open‑source):
@@ -56,10 +56,10 @@ This makes your shows **shareable, remixable, and reproducible** across the ecos
    Add feeds (RSS/Atom/JSON), connect APIs, and point to pages you care about.
 
 2. **Design**
-   Create your program structure: name segments, assign content sources, and attach a prompt to each segment.
+   Create your program structure: name segments, assign content sources, and attach a prompt to each segment. *(Custom design requires Pro.)*
 
 3. **Choose engines**
-   Pick a text LLM for script generation and an image model for show art. Use cloud APIs or Apple on‑device models if you can use. 
+   Pick a text LLM for script generation and an image model for show art—use cloud APIs or Apple on‑device models on compatible devices.
 
 4. **Generate**
    Produce segment scripts, covers, and avatars. Keep your **personality** and **Sound Sets** consistent across episodes.
@@ -112,5 +112,5 @@ This makes your shows **shareable, remixable, and reproducible** across the ecos
 2. Add feeds, APIs, and pages.
 3. Select your text model + image model.
 4. Define or pick a personality and Sound Set.
-5. Generate (publish to you wish).
+5. Generate (publish if you wish).
 
