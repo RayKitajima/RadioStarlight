@@ -30,7 +30,7 @@ Design, generate, and publish living radio programs from the web’s freshest co
 2. Paste the following URL. 
 
 ```
-https://starlight-catalogsite.pages.dev/Catalogs/Featured/Starter-Catalog/
+https://catalog.radio-starlight.com/Catalogs/Featured/Starter-Catalog/
 ```
 
 3. Click **Import**, and confirm.
